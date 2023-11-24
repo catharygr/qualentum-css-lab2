@@ -1,0 +1,120 @@
+/* Es el css principal que se importa en el documento HTML con defer */
+@import url("/css/reset.css");
+@import url("/css/global.css");
+
+#content {
+  display: grid;
+  grid-template-columns: min(20rem, 25vw) auto;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+#main-sidebar {
+  border-right: 2px solid var(--beige-color);
+  align-self: start;
+  padding: 2.5rem 1rem;
+}
+
+#main-sidebar > ul {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-article > section {
+  margin-top: 3rem;
+}
+
+.main-header h1 {
+  padding-top: 0;
+}
+
+.guide-typography {
+  align-items: center;
+}
+
+.guide-typography > div {
+  padding: 1rem;
+}
+
+.guide-typography__example {
+  min-width: 400px;
+}
+
+.guide-typography__properties {
+  min-width: 140px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.guide-color-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  padding: 2rem 1rem 5rem;
+  box-sizing: border-box;
+}
+
+.guide-color {
+  border-radius: 0.5rem;
+}
+
+.guide-color ul {
+  padding: 10rem 1rem 1rem;
+  height: 19rem;
+}
+.guide-color li {
+  padding-top: 0.5rem;
+}
+.header1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  padding: 1.5rem 0;
+  color: var(--gold-color);
+}
+
+.header2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+.header3 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+.header4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+.header5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+.header6 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+
+.contentido-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem 1rem 5rem;
+}
+
+.guide-content {
+  background-color: var(--extra-dark-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

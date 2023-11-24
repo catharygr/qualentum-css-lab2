@@ -1,0 +1,138 @@
+/* Clases globales para sitios web como body, a, font-size */
+@import url("/css/variables.css");
+@import url("/css/colors.css");
+@import url("/css/layout.css");
+/* Importar fuentes @font-face */
+
+@font-face {
+  font-family: "estandar";
+  src: url("/fonts/estandar.woff2") format("woff2");
+}
+@font-face {
+  font-family: "italic";
+  src: url("/fonts/estandar_italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "handmade";
+  src: url("/fonts/handmade.woff2") format("woff2");
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  font-family: "estandar", sans-serif;
+}
+
+i {
+  font-family: "italic", sans-serif;
+}
+b {
+  font-weight: bold;
+}
+mark {
+  background-color: var(--gold-color);
+  color: var(--extra-dark-color);
+}
+small {
+  font-size: 0.8rem;
+}
+ul li:not(:first-child) {
+  margin-top: 0.4rem;
+}
+.decorated li::before {
+  content: "\2022";
+  color: var(--gold-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.1em;
+}
+
+#main-menu {
+  position: sticky;
+  top: 0;
+  background-color: color-mix(
+    in srgb,
+    var(--extra-dark-color) 95%,
+    transparent
+  );
+}
+#main-menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main-menu > div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+#main-menu > .logo {
+  float: left;
+}
+
+#main-menu > .title {
+  float: right;
+  text-align: right;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  padding: 1.5rem 0;
+  color: var(--gold-color);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--gold-color);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: var(--light-color);
+}
+
+a {
+  color: var(--gold-color);
+}
+
+a > #hover:hover {
+  color: var(--light-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* footer */
+.sign {
+  text-align: center;
+  padding: 1rem 0;
+}

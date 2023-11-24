@@ -1,0 +1,38 @@
+/* Clases de colores a base de variables */
+
+.white-color {
+  color: var(--white-color);
+}
+.light-color {
+  color: var(--light-color);
+}
+.gold-color {
+  color: var(--gold-color);
+}
+.beige-color {
+  color: var(--beige-color);
+}
+.dark-color {
+  color: var(--dark-color);
+}
+.extra-dark-color {
+  color: var(--extra-dark-color);
+}
+.white-background {
+  background-color: var(--white-color);
+}
+.light-background {
+  background-color: var(--light-color);
+}
+.gold-background {
+  background-color: var(--gold-color);
+}
+.beige-background {
+  background-color: var(--beige-color);
+}
+.dark-background {
+  background-color: var(--dark-color);
+}
+.extra-dark-background {
+  background-color: var(--extra-dark-color);
+}
